@@ -14,6 +14,7 @@ const NomeContainer = styled.p`
 
 const BotaoDeletar = styled.p`
     color: red;
+    cursor: pointer;  
 `
 
 const PlaylistCard = (props) => {
@@ -21,7 +22,7 @@ const PlaylistCard = (props) => {
         <PlaylistCardContainer>
            <button onClick={() => props.mudarPagina("playlistDetalhes", props.playlistId)}>Abrir playlist</button>
             <NomeContainer>{props.name}</NomeContainer>
-            <BotaoDeletar onClick={() => props.deletarPlaylist(props.playlistId)}>X</BotaoDeletar>
+            <BotaoDeletar onClick={() => props.deletarPlaylist(props.playlistId)}> X </BotaoDeletar>
         </PlaylistCardContainer>
     )
 }

@@ -20,6 +20,7 @@ const TrackContainer = styled.h4`
 
 const BotaoDeletar = styled.p`
     color: red;
+    cursor: pointer;  
 `
 const ArtistaContainer = styled.p`
     margin-right: 10px;
